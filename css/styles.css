@@ -11,10 +11,18 @@ body {
 }
 
 .button{
-  margin: center; 
-
+  width: 300px;
 }
+
 
 h2{
   text-align: center;
+}
+
+.card{
+  margin: auto; 
+}
+
+.label{
+  color-text :red;
 }

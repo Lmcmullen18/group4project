@@ -6,7 +6,7 @@ body {
 
 .form{
   margin: auto; 
-  border: 2px;
+  border: 10px;
   width: 500px;
 }
 
@@ -25,4 +25,9 @@ h2{
 
 .label{
   color-text :red;
+}
+
+#data{
+  border: solid black 2px;
+
 }

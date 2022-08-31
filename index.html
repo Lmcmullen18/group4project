@@ -28,16 +28,16 @@
   <form class="form">
     
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Task Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+    <label for="taskname" class="form-label">Task Name</label>
+    <input type="name" class="form-control" id="taskname" placeholder="">
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Task Description</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="taskdescr" class="form-label">Task Description</label>
+    <textarea class="form-control" id="taskdescr" rows="3"></textarea>
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Assigned To</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+    <label for="Assigned" class="form-label">Assigned To</label>
+    <input type="" class="form-control" id="Assigned" placeholder="">
     <label for="start">Due Date:</label>
 
 <input type="date" id="start" name="trip-start"
@@ -45,68 +45,77 @@
        min="2018-01-01" max="2018-12-31">
 
   </div>
-  <div class="position-absolute bottom-45 start-50"><button type="button" class="btn btn-dark">Add  Task</button></div>
-  
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="submit">Add Task</button></div>
+
   </div>
    
    
 </form>
-<div class="card">
+ <h3 style="text-align: center;">Task </h3>
 <div class="card" style="width: 18rem; ">
   <div class="card-body">
     <h5 class="card-title">Task 1</h5>
     <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
     <p class="card-text"> Santiago carrillo</p>
     <p class="card-text"> Due Date: Aug 20 -2022</p>
-    <label type="label" class="text-danger">IN PROGRESS</label>
+    <button  type="button" class="btn btn-danger">IN PROGRESS
+      
+    </button >
+    <button type="button" class="btn btn-dark">Delete</button></div>
+    
+  </div>
+</div>
+
+<div class="card" style="width: 18rem; ">
+  <div class="card-body">
+    <h5 class="card-title">Task 2</h5>
+    <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
+    <p class="card-text"> Santiago carrillo</p>
+    <p class="card-text"> Due Date: Aug 20 -2022</p>
+    <button  type="button" class="btn btn-danger">IN PROGRESS</button >
     <button type="button" class="btn btn-dark">Delete</button></div>
   </div>
 </div>
 
 <div class="card" style="width: 18rem; ">
   <div class="card-body">
-    <h5 class="card-title">Task 1</h5>
+    <h5 class="card-title">Task 3</h5>
     <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
     <p class="card-text"> Santiago carrillo</p>
     <p class="card-text"> Due Date: Aug 20 -2022</p>
-    <label type="label">IN PROGRESS</label>
+    <button  type="button" class="btn btn-danger">IN PROGRESS</button >
     <button type="button" class="btn btn-dark">Delete</button></div>
   </div>
 </div>
 
 <div class="card" style="width: 18rem; ">
   <div class="card-body">
-    <h5 class="card-title">Task 1</h5>
+    <h5 class="card-title">Task 4</h5>
     <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
     <p class="card-text"> Santiago carrillo</p>
     <p class="card-text"> Due Date: Aug 20 -2022</p>
-    <label type="label">IN PROGRESS</label>
+    <button  type="button" class="btn btn-danger">IN PROGRESS</button >
     <button type="button" class="btn btn-dark">Delete</button></div>
   </div>
 </div>
 
 <div class="card" style="width: 18rem; ">
   <div class="card-body">
-    <h5 class="card-title">Task 1</h5>
+    <h5 class="card-title">Task 5</h5>
     <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
     <p class="card-text"> Santiago carrillo</p>
     <p class="card-text"> Due Date: Aug 20 -2022</p>
-    <label type="label">IN PROGRESS</label>
+    <button  type="button" class="btn btn-danger">IN PROGRESS</button >
     <button type="button" class="btn btn-dark">Delete</button></div>
   </div>
+</div>
 </div>
 
-<div class="card" style="width: 18rem; ">
-  <div class="card-body">
-    <h5 class="card-title">Task 1</h5>
-    <h6 class="card-subtitle mb-2 text-muted">task 1 description</h6>
-    <p class="card-text"> Santiago carrillo</p>
-    <p class="card-text"> Due Date: Aug 20 -2022</p>
-    <label class="label" for="IN PROGRESS">IN PROGRESS</label>
-    <button type="button" class="btn btn-dark">Delete</button></div>
-  </div>
-</div>
-</div>
+
+<script src="scripts/index.js"></script>
+
+
   </body>
   
 </html>

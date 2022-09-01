@@ -11,6 +11,7 @@ newTaskForm.addEventListener('submit', (event) => {
     const newtaskassignedto = document.querySelector("#Assigned");
     const newtaskduedate = document.querySelector("#start");
     const newtaskmessage = document.querySelector("#alertmess");
+      
 
 
 
@@ -23,9 +24,11 @@ const name = newtasknameinput.value;
 const description = newtaskndescription.value;
 const assignedTo = newtaskassignedto.value;
 const dueDate = newtaskduedate.value;
+console.log(name +  description + assignedTo);
 if(!validFormFieldInput(name)){
     errorMessage.innerHTML = "Invalid name input";
     errorMessage.style.display = "block";
+    alert("Invalid name input");
 } else{
     errorMessage.style.display = "none";
 

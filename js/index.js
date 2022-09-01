@@ -13,6 +13,7 @@ let newTaskForm = document.querySelector("#newTaskForm");
 newTaskForm.addEventListener('submit', (event) => {
     // preventDefault action
     event.preventDefault();
+
     console.log(event);
 
     //select the inputs
@@ -40,6 +41,15 @@ newTaskForm.addEventListener('submit', (event) => {
     } else {
         alert("submission is completed!");
     }
+
+
+    //select the inputs
+    const newtasknameinput = document.querySelector("#taskname");
+    const newtaskndescription = document.querySelector("#taskdescr");
+    const newtaskassignedto = document.querySelector("#Assigned");
+    const newtaskduedate = document.querySelector("#start");
+    const newtaskmessage = document.querySelector("#alertmess");
+
 
 });
 const textHtml = createTaskHtml(taskName, description, dueDate, assignedTo);

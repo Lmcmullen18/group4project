@@ -42,6 +42,6 @@ class TaskManager {
             console.log(currentTask);
         }
         let date = new Date(dueDate)
-        let formattedDate = 
+        let formattedDate = "";
     }
 }

@@ -21,6 +21,19 @@ class TaskManager {
         this.currentId = currentId;
     }
 
+    render() {
+        let tasksHtmlList = [];
+        for (let i = 0; i < tasksHtmlList.length; i++) {
+            currentTask = i;
+            console.log(currentTask);
+        }
+        let date = new Date(dueDate)
+        let formattedDate = date.toString()
+        let taskHtml = createTaskHtml(taskName, description, formattedDate, assignedTo)
+        tasksHtmlList.push(taskHtml);
+
+    }
+
     //create the addtask method
 
     addTask(taskName, description, assignedTo, dueDate) {
@@ -35,13 +48,5 @@ class TaskManager {
         // push the task to the task property
         this.tasks.push(task);
     }
-    render() {
-        let tasksHtmlList = [];
-        for (let i = 0; i < tasksHtmlList.length; i++) {
-            currentTask = i;
-            console.log(currentTask);
-        }
-        let date = new Date(dueDate)
-        let formattedDate = "";
-    }
+
 }

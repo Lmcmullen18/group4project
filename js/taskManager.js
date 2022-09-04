@@ -1,4 +1,4 @@
-function createTaskHtml(taskName, description, dueDate, assignedTo) {
+function createTaskHtml(taskName, description, dueDate, assignedTo, status) {
 
     const html = `
     <div class="card" style="width: 18rem; ">
@@ -13,6 +13,7 @@ function createTaskHtml(taskName, description, dueDate, assignedTo) {
     </div>
   </div>
     `
+    return html;
 }
 
 class TaskManager {

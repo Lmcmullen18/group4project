@@ -24,8 +24,8 @@ class TaskManager {
 
     render() {
         let tasksHtmlList = [];
-        for (let i = 0; i < tasksHtmlList.length; i++) {
-            currentTask = tasksHtmlList[i];
+        for (let i = 0; i < this.tasks.length; i++) {
+            let currentTask = this.tasks[i];
             let date = new Date(currentTask.dueDate);
             let formattedDate = date.toString();
             let taskHtml = createTaskHtml(currentTask.name, currentTask.description, formattedDate, currentTask.assignedTo, currentTask.status);

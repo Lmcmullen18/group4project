@@ -36,6 +36,8 @@ class TaskManager {
 
         const tasksHtml = tasksHtmlList.join(`\n`);
         document.querySelector("#tasksId").innerHTML = tasksHtml;
+        // console.log(task);
+        // document.querySelector("#tasksId").innerHTML = `<ul id="tasksId">EMPTY</ul>`;
 
     }
 

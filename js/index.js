@@ -1,7 +1,7 @@
-// const task1 = new TaskManager('task');
-// console.log(task1.tasks);
-const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
-console.log(taskHtml);
+const taskManager = new TaskManager('task');
+console.log(taskManager);
+// const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
+// console.log(taskHtml);
 
 const validFormFieldInput = (data) => {
     if (data !== null && data !== "") {

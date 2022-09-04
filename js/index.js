@@ -52,5 +52,8 @@ newTaskForm.addEventListener('submit', (event) => {
     const newtaskduedate = document.querySelector("#start");
     const newtaskmessage = document.querySelector("#alertmess");
 
+    taskManager.addTask(newtasknameinput, newtaskndescription, newtaskassignedto, newtaskduedate, newtaskmessage);
+    taskManager.render();
+
 
 });

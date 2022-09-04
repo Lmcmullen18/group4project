@@ -34,7 +34,9 @@ class TaskManager {
             console.log(currentTask);
         }
 
-        const tasksHtml = tasksHtmlList.join(`\n`)
+        const tasksHtml = tasksHtmlList.join(`\n`);
+        document.querySelector("#tasksId").innerHTML = tasksHtml;
+
     }
 
     //create the addtask method

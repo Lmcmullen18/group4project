@@ -11,7 +11,7 @@ const validFormFieldInput = (data) => {
 
 let newTaskForm = document.querySelector("#newTaskForm");
 newTaskForm.addEventListener('submit', (event) => {
-    // preventDefault action
+    // prevent page refresh on form submission
     event.preventDefault();
 
     console.log(event);

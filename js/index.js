@@ -1,5 +1,7 @@
 // const task1 = new TaskManager('task');
 // console.log(task1.tasks);
+const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
+console.log(taskHtml);
 
 const validFormFieldInput = (data) => {
     if (data !== null && data !== "") {
@@ -52,5 +54,3 @@ newTaskForm.addEventListener('submit', (event) => {
 
 
 });
-const textHtml = createTaskHtml(taskName, description, dueDate, assignedTo);
-console.log(textHtml);

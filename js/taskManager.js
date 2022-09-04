@@ -34,7 +34,7 @@ class TaskManager {
             console.log(currentTask);
         }
 
-
+        const tasksHtml = tasksHtmlList.join(`\n`)
     }
 
     //create the addtask method

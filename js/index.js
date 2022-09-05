@@ -50,10 +50,10 @@ newTaskForm.addEventListener('submit', (event) => {
 
 
     //select the inputs
-    const newtasknameinput = document.querySelector("#taskname");
-    const newtaskndescription = document.querySelector("#taskdescr");
-    const newtaskassignedto = document.querySelector("#Assigned");
-    const newtaskduedate = document.querySelector("#start");
+    const newtasknameinput = document.querySelector("#taskname").value;
+    const newtaskndescription = document.querySelector("#taskdescr").value;
+    const newtaskassignedto = document.querySelector("#Assigned").value;
+    const newtaskduedate = document.querySelector("#start").value;
     const newtaskmessage = document.querySelector("#alertmess");
 
     taskManager.addTask(newtasknameinput, newtaskndescription, newtaskassignedto, newtaskduedate, newtaskmessage);

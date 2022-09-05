@@ -61,3 +61,10 @@ newTaskForm.addEventListener('submit', (event) => {
 
 
 });
+
+tasksList = document.querySelector("#tasksId");
+tasksList.addEventListener("click", event => {
+    parentTask = event.target.parentElement;
+    if (event.target.classList.contains("done-button")) {
+    }
+});

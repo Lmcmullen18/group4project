@@ -6,7 +6,7 @@ function createTaskHtml(taskName, description, dueDate, assignedTo, status, id) 
       <h6 class="card-subtitle mb-2 text-muted">task 1 description : ${description}</h6>
       <p class="card-text"> Assigned to : ${assignedTo}</p>
       <p class="card-text"> Due Date: ${dueDate}</p>
-      <button  type="button" class="btn btn-danger">IN PROGRESS  
+      <button  type="button" class="done-button btn btn-danger">IN PROGRESS  
       </button >
       <button type="button" class="btn btn-dark">Delete</button></div>  
     </div>

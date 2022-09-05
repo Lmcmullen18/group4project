@@ -49,6 +49,7 @@ class TaskManager {
             name: taskName,
             description: description,
             dueDate: dueDate,
+            assignedTo: assignedTo,
             status: 'TODO'
         };
         // push the task to the task property

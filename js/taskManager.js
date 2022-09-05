@@ -1,7 +1,6 @@
-function createTaskHtml(taskName, description, dueDate, assignedTo, status) {
-
+function createTaskHtml(taskName, description, dueDate, assignedTo, status, id) {
     const html = `
-    <div class="card" style="width: 18rem; ">
+    <div data-task-id= ${id} class="card" style="width: 18rem; ">
     <div class="card-body">
       <h5 class="card-title" id="task1">Task name: ${taskName}</h5>
       <h6 class="card-subtitle mb-2 text-muted">task 1 description : ${description}</h6>
@@ -28,7 +27,7 @@ class TaskManager {
             let currentTask = this.tasks[i];
             let date = new Date(currentTask.dueDate);
             let formattedDate = date.toString();
-            let taskHtml = createTaskHtml(currentTask.name, currentTask.description, formattedDate, currentTask.assignedTo, currentTask.status);
+            let taskHtml = createTaskHtml(currentTask.name, currentTask.description, formattedDate, currentTask.assignedTo, currentTask.status, currentTask.id);
             tasksHtmlList.push(taskHtml);
 
             console.log(currentTask);

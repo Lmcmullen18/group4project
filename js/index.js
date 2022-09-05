@@ -1,4 +1,8 @@
 const taskManager = new TaskManager();
+taskManager.addTask("a", "A", "me", "12/12/22");
+taskManager.addTask("b", "B", "you", "12/15/22");
+taskManager.addTask("c", "C", "him", "12/17/22");
+taskManager.render();
 console.log(taskManager);
 // const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
 // console.log(taskHtml);

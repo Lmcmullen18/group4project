@@ -40,9 +40,9 @@ newTaskForm.addEventListener('submit', (event) => {
         errorMessage.innerHTML = "Invalid input";
         errorMessage.style.display = "block";
         alert("Error!")
-    } else {
-        alert("submission is completed!");
-    }
+    } //else {
+    // alert("submission is completed!");
+    // }
 
 
     //select the inputs

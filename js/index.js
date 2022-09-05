@@ -1,4 +1,4 @@
-const taskManager = new TaskManager('task');
+const taskManager = new TaskManager();
 console.log(taskManager);
 // const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
 // console.log(taskHtml);

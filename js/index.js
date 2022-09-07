@@ -32,13 +32,30 @@ newTaskForm.addEventListener('submit', (event) => {
     const description = newTaskDescription.value;
     const assignedTo = newTaskAssignedto.value;
     const dueDate = newTaskDueDate.value;
-    console.log(taskName);
+    //console.log(taskName);
 
-    if (!validFormFieldInput(taskName) || !validFormFieldInput(description) || !validFormFieldInput(assignedTo) || !validFormFieldInput(dueDate)) {
-        errorMessage.innerHTML = "Invalid input";
+    if (!validFormFieldInput(taskName)){ 
+        errorMessage.innerHTML = "Invalid taskname";
         errorMessage.style.display = "block";
         alert("Error!")
-    } else {
+    }
+    else if(!validFormFieldInput(description)) { 
+        errorMessage.innerHTML = "Invalid des";
+        errorMessage.style.display = "block";
+        alert("Error!") 
+               
+    } 
+    else if(!validFormFieldInput(assignedTo)){
+        errorMessage.innerHTML = "Invalid assignedTo";
+        errorMessage.style.display = "block";
+        alert("Error!") 
+    }
+    else if(!validFormFieldInput(dueDate)){
+        errorMessage.innerHTML = "Invalid date";
+        errorMessage.style.display = "block";
+        alert("Error!") 
+    }
+    else {
         alert("submission is completed!");
     }
 

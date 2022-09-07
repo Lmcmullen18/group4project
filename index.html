@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <script src="js/taskManager.js" defer></script>
   <script src="js/index.js" defer></script>
+
   <title>Group 4</title>
 </head>
 
@@ -29,29 +30,31 @@
 
     <div class="mb-3">
       <label for="taskname" class="form-label">Task Name</label>
-      <input type="name" class="form-control" id="taskname" placeholder="">
-      <div class="alert alert-warning" role="alert">
-        Fill in the blank!
+      <input type="name" class="form-control" id="taskname" placeholder="" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please fill out the form.
       </div>
     </div>
+
     <div class="mb-3">
       <label for="taskdescr" class="form-label">Task Description</label>
-      <textarea class="form-control" id="taskdescr" rows="3"></textarea>
-      <div class="alert alert-warning" role="alert">
-        Fill in the blank!
+      <textarea class="form-control" id="taskdescr" rows="3" id="validationCustom03" required></textarea>
+      <div class="invalid-feedback">
+        Please fill out the form.
       </div>
+
     </div>
     <div class="mb-3">
       <label for="Assigned" class="form-label">Assigned To</label>
-      <input type="" class="form-control" id="Assigned" placeholder="">
-      <div class="alert alert-warning" role="alert">
-        Fill in the blank!
+      <input type="" class="form-control" id="Assigned" placeholder="" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please fill out the form.
       </div>
-      <label for="start">Due Date:</label>
 
-      <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-      <div class="alert alert-warning" role="alert">
-        Fill in the blank!
+      <label for="start">Due Date:</label>
+      <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2025-12-31">
+      <div class="invalid-feedback">
+        Please fill out the form.
       </div>
     </div>
     <div class="d-grid gap-2">

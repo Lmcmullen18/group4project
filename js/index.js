@@ -1,11 +1,9 @@
 const taskManager = new TaskManager();
-taskManager.addTask("a", "A", "me", "12/12/22");
-taskManager.addTask("b", "B", "you", "12/15/22");
-taskManager.addTask("c", "C", "him", "12/17/22");
+// taskManager.addTask("a", "A", "me", "12/12/22");
+// taskManager.addTask("b", "B", "you", "12/15/22");
+// taskManager.addTask("c", "C", "him", "12/17/22");
 taskManager.render();
 console.log(taskManager);
-// const taskHtml = createTaskHtml("laundry", "folding", "05/05/2022", "Noah", null);
-// console.log(taskHtml);
 
 const validFormFieldInput = (data) => {
     if (data !== null && data !== "") {
@@ -28,7 +26,7 @@ newTaskForm.addEventListener('submit', (event) => {
     const newTaskAssignedto = document.querySelector("#Assigned");
     const newTaskDueDate = document.querySelector("#start");
     const errorMessage = document.querySelector(".alert");
-    console.log(newTaskNameInput);
+    // console.log(newTaskNameInput);
 
     // validation code 
 
@@ -38,15 +36,14 @@ newTaskForm.addEventListener('submit', (event) => {
     const description = newTaskDescription.value;
     const assignedTo = newTaskAssignedto.value;
     const dueDate = newTaskDueDate.value;
-    console.log(taskName);
 
     if (!validFormFieldInput(taskName) || !validFormFieldInput(description) || !validFormFieldInput(assignedTo) || !validFormFieldInput(dueDate)) {
         errorMessage.innerHTML = "Invalid input";
         errorMessage.style.display = "block";
         alert("Error!")
-    } //else {
-    // alert("submission is completed!");
-    // }
+    } else {
+        alert("submission is completed!");
+    }
 
 
     //select the inputs
@@ -56,15 +53,40 @@ newTaskForm.addEventListener('submit', (event) => {
     const newtaskduedate = document.querySelector("#start").value;
     const newtaskmessage = document.querySelector("#alertmess");
 
+    // console.log(newtaskassignedto);
     taskManager.addTask(newtasknameinput, newtaskndescription, newtaskassignedto, newtaskduedate, newtaskmessage);
     taskManager.render();
 
 
 });
 
-tasksList = document.querySelector("#tasksId");
+let tasksList = document.querySelector("#tasksId");
+console.log(tasksList);
 tasksList.addEventListener("click", event => {
-    parentTask = event.target.parentElement;
-    if (event.target.classList.contains("done-button")) {
-    }
+    let parentTask = event.target.parentElement;
+    let taskId = parentTask.dataset.taskId;
+
+    // console.log(taskId);
+    // console.log(typeof taskId);
+    // console.log(event.target);
+
+    const task = taskManager.getTaskById(taskId);
+    task.status = "Done";
+    taskManager.render();
+
 });
+
+    // if (event.target.classList.contains("done-button")) {
+    //     console.log("YAY");
+    //     console.log("   if event.target.classList.contains(done-button): event\n");
+    //     console.log(event);
+    //     // console.log("   if event.target.classList.contains(done-button): event.target\n" + event.target);
+    // }
+
+
+
+
+  // console.log("tasksList-click-event: " + event);
+    // console.log("tasksList-click-event-target: " + event.target);
+    // console.log(event.target.classList);
+    // console.log(event.target.parentElement);

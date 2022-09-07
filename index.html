@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <script src="js/taskManager.js" defer></script>
   <script src="js/index.js" defer></script>
+
   <title>Group 4</title>
 </head>
 
@@ -36,6 +37,7 @@
     </div>
       </div>
     </div>
+
     <div class="mb-3">
       <label for="taskdescr" class="form-label">Task Description</label>
       <textarea class="form-control" id="taskdescr" rows="3" id="validationCustom03" required ></textarea>
@@ -44,6 +46,7 @@
       <div class="alert alert-warning" role="alert">
         Fill in the blank!
       </div>
+
     </div>
     <div class="mb-3">
       <label for="Assigned" class="form-label">Assigned To</label>
@@ -54,7 +57,6 @@
       <div class="alert alert-warning" role="alert">
         Fill in the blank!
       </div>
-      <label for="start">Due Date:</label>
 
       <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2025-12-31">
       <div class="alert alert-warning" role="alert">
@@ -70,7 +72,8 @@
 
   </form>
 
-  <h3 style="text-align: center;">Task </h3>
+  <h3 style="text-align: center;">Tasks </h3>
+  <ul id="tasksId"></ul>
   <!-- <div class="card" style="width: 18rem; ">
   <div class="card-body">
     <h5 class="card-title" id="task1">Task 1</h5>

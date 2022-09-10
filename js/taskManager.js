@@ -71,4 +71,11 @@ class TaskManager {
             }
         }
     }
+
+    save() {
+        let tasksJson = JSON.stringify(this.tasks);
+        localStorage.setItem("tasks", tasksJson);
+        let currentId = this.currentId.toString();
+        localStorage.setItem("currentId", currentId);
+    }
 };

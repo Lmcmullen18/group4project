@@ -91,4 +91,16 @@ class TaskManager {
             let numcurrentId = Number(currentId);
         }
     }
+
+    deleteTask() {
+        newTasks = [];
+        for (let i = 0; i < newTasks.length; i++) {
+            let task = newTasks[i];
+            if (task.id !== taskId) {
+                newTasks.push(task);
+                this.tasks = newTasks;
+            }
+        }
+
+    }
 };

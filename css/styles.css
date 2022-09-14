@@ -1,6 +1,10 @@
 body {
   background-color: white;
   border: 2px;
+  background-image: url(https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .form {
@@ -12,7 +16,6 @@ body {
 .button {
   width: 300px;
 }
-
 
 h2 {
   text-align: center;
@@ -28,9 +31,13 @@ h2 {
 
 #data {
   border: solid black 2px;
-
 }
 
 .alert {
-  display: none
+  display: none;
+}
+
+#tasksId {
+  padding-top: 2.5rem;
+  padding-bottom: ;
 }
